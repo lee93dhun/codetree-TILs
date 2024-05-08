@@ -6,5 +6,6 @@ public class Main {
         int h = sc.nextInt(), w = sc.nextInt();
         int b = (10000*w)/(h*h);
         if(b>=25) System.out.print(b+"\nObesity");
+        if(b<25) System.out.print(b);
     }
 }
