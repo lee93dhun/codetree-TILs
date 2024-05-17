@@ -5,11 +5,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a=sc.nextInt(), b = sc.nextInt();
         int result = 0;
-        for(int i=a; i<=b; i++){
-            if(i%5==0){
-                result +=i;
+        if(a<b){
+            for(int i=a; i<=b; i++){
+                if(i%5==0){
+                    result +=i;
+                }
+            }
+        }else{
+            for(int i=b; i<=a; i++){
+                if(i%5==0){
+                    result +=i;
+                }
             }
         }
+        
         System.out.print(result);
     }
 }
