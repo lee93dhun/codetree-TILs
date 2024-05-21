@@ -6,8 +6,10 @@ public class Main {
         
         String determine = "P";
         for(int i =2; i<n; i++){
-            if(n%i==0) determine = "C";
-            break;
+            if(n%i==0){
+                determine = "C";
+                break;
+            } 
         }
         System.out.print(determine);
     }
